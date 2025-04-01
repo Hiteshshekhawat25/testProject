@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: my-node-app
+    env: node
+    repo: https://github.com/Hiteshshekhawat25/testProject  # Replace with your repo URL
+    branch: main  # Change if your branch is different
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5001  # Or any other port you want
+      - key: NODE_ENV
+        value: production
